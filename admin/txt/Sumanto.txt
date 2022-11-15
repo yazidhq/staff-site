@@ -1,0 +1,21 @@
+Nama : Sumanto
+Tempat Tanggal Lahir : 1622-12-13
+Lembaga : Kedokteran
+Jabatan : Bosss
+Email : sinta@gmail.com
+Nomor Pegawai : 001
+Mulai Mengajar : 2022-11-08
+Nomor HP : 91283092
+LOKASI / RUANG
+Kampus : Kampus G
+Gedung : Gedung 1
+Lantai : Lantai 1
+STATUS
+Status : Staff Tetap
+Tipe Account : Account Baru
+Hingga Tanggal : 2022-11-14
+NAMA ACCOUNT & PASSWORD
+Pilihan 1 : smanto
+Pilihan 2 : sumanto
+Alternatif : 
+Password : sumanto123

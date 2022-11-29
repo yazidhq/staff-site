@@ -25,11 +25,20 @@ require 'config/function.php';
 	    </div>
 	    <div class="mb-3">
 	        <label for="ttl" class="form-label">Tempat Tanggal Lahir :</label>
-	        <input type="date" name="ttl" id="ttl" class="form-control" required>
+	        <input type="date" name="ttl" id="ttl" class="form-control text-muted" required>
 	    </div>
 	    <div class="mb-3">
-	        <label for="lembaga" class="form-label">Bagian / Lembaga / Fakultas :</label>
-	        <input type="text" name="lembaga" id="lembaga" class="form-control" placeholder="ex : Fakultas Kedokteran" required>
+	        <label for="lembaga" class="form-label">Bagian / Lembaga / Fakultas :</label><br>
+		  	<select name="lembaga" id="lembaga" class="form-control text-muted" required>
+			    <option hidden>Select Option ▼</option>
+			    <option value="FIKTI">FIKTI</option>
+			    <option value="EKONOMI">EKONOMI</option>
+			    <option value="FTI">FTI</option>
+			    <option value="FTSP">FTSP</option>
+			    <option value="KEDOKTERAN">KEDOKTERAN</option>
+			    <option value="SASTRA">SASTRA</option>
+			    <option value="KOMUNIKASI">KOMUNIKASI</option>
+		  	</select>
 	    </div>
 	    <div class="mb-3">
 	        <label for="jabatan" class="form-label">Jabatan :</label>
@@ -45,11 +54,11 @@ require 'config/function.php';
 	    </div>
 	    <div class="mb-3">
 	        <label for="mengajar" class="form-label">Mulai Mengajar :</label>
-	        <input type="date" name="mengajar" id="mengajar" class="form-control" placeholder="Tanggal Mulai Mengajar">
+	        <input type="date" name="mengajar" id="mengajar" class="form-control text-muted" placeholder="Tanggal Mulai Mengajar">
 	    </div>
 	    <div class="mb-3">
 	    	<label for="nohp" class="form-label">Nomor Hp:</label>
-			<input type="text" name="nohp" id="nohp" class="form-control" placeholder="Nomor Hp">
+			<input type="number" name="nohp" id="nohp" class="form-control" placeholder="ex : 08129XXXXXXX">
 	    </div>
 	    <div class="form-control">	
 	    	<label for="kampus">Lokasi / Ruang:</label><br>
@@ -73,8 +82,8 @@ require 'config/function.php';
 			<label for="accbaru">Account Baru</label>
 			<input type="radio" name="tipeacc" id="accsem" value="Account Sementara">
 			<label for="accsem" style="margin-bottom: 1%;">Account Sementara</label><br>
-			<label for="hinggatgl">Hingga Tanggal : </label>
-	        <input type="date" name="hinggatgl" id="hinggatgl" class="form-control" placeholder="Hingga Tanggal">
+			<label for="hinggatgl" style="margin-bottom: 1%;">Hingga Tanggal : </label>
+	        <input type="date" name="hinggatgl" id="hinggatgl" class="form-control text-muted" placeholder="Hingga Tanggal">
 	    </div><br>
 
 	    <hr><h5><strong>NAMA AKUN & PASSWORD</strong></h5>

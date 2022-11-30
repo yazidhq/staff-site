@@ -18,6 +18,7 @@ require 'config/function.php';
 	</div><br>
 
 	<form action="" method="post" enctype="multipart/form-data">
+		<input name="acc_status" hidden>
 		<h5><strong>DATA PEMOHON</strong></h5>
 	    <div class="mb-3">
 	        <label for="nama" class="form-label">Nama Lengkap :</label>

@@ -24,6 +24,7 @@ function isi_data($data){
 	$pil2 = htmlspecialchars($data["pil2"]);
 	$altern = htmlspecialchars($data["altern"]);
 	$pass = htmlspecialchars($data["pass"]);
+	$acc_status = htmlspecialchars($data["acc_status"]);
 
 	$ktp = upload();
 	if (!$ktp) {
@@ -51,7 +52,8 @@ function isi_data($data){
 						'$pil2',
 						'$altern',
 						'$pass',
-						'$ktp'
+						'$ktp',
+						'acc_status'
 					)
 				");
 

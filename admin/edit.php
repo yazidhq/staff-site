@@ -66,20 +66,20 @@ $result = mysqli_fetch_array($query);
 	    </div><br>
 	    <div class="form-control">
 	    	<label>Status saat ini : <?= $result['status'] ?> (isikan status yang sesuai walaupun tidak diubah)</label><br>
-			<input type="radio" name="status" id="sttetap" value="Staff Tetap" required>
+			<input type="radio" name="status" id="sttetap" value="Staff Tetap" oninvalid="this.setCustomValidity('isikan status yang sesuai walaupun tidak diubah')" required>
 			<label for="sttetap">Staff Tetap</label>	
-			<input type="radio" name="status" id="sthonorer" value="Staff Honorer" required>
+			<input type="radio" name="status" id="sthonorer" value="Staff Honorer" oninvalid="this.setCustomValidity('isikan status yang sesuai walaupun tidak diubah')" required>
 			<label for="sthonorer">Staff Honorer</label>
-			<input type="radio" name="status" id="stluarbiasa" value="Staff Luar Biasa" required>
+			<input type="radio" name="status" id="stluarbiasa" value="Staff Luar Biasa" oninvalid="this.setCustomValidity('isikan status yang sesuai walaupun tidak diubah')" required>
 			<label for="stluarbiasa">Staff Luar Biasa</label>
 	    </div><br>
 
 	    <hr><h5><strong>TIPE AKUN</strong></h5>
 	    <div class="form-control">
 	    	<label>Tipe akun saat ini : <?= $result['tipeacc'] ?> (isikan tipe akun yang sesuai walaupun tidak diubah)</label><br>
-	    	<input type="radio" name="tipeacc" id="accbaru" value="Account Baru" required>
+	    	<input type="radio" name="tipeacc" id="accbaru" value="Account Baru" oninvalid="this.setCustomValidity('isikan tipe akun yang sesuai walaupun tidak diubah')" required>
 			<label for="accbaru">Account Baru</label>
-			<input type="radio" name="tipeacc" id="accsem" value="Account Sementara" required>
+			<input type="radio" name="tipeacc" id="accsem" value="Account Sementara" oninvalid="this.setCustomValidity('isikan tipe akun yang sesuai walaupun tidak diubah')" required>
 			<label for="accsem" style="margin-bottom: 1%;">Account Sementara</label><br>
 			<label>Hingga Tanggal (Tempat, YY/MM/DD) : </label><br>
 	        <input type="text" name="hinggatgl" id="hinggatgl" class="form-control" value="<?= $result['hinggatgl'] ?>">

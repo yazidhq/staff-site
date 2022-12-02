@@ -43,11 +43,11 @@ require 'config/function.php';
 	    </div>
 	    <div class="mb-3">
 	        <label for="jabatan" class="form-label">Jabatan :</label>
-	        <input type="text" name="jabatan" id="jabatan" class="form-control" placeholder="Jabatan saat ini">
+	        <input type="text" name="jabatan" id="jabatan" class="form-control" placeholder="Jabatan saat ini" required>
 	    </div>
 	    <div class="mb-3">
 	        <label for="email" class="form-label">Email :</label>
-	        <input type="email" name="email" id="email" class="form-control" placeholder="Email aktif">
+	        <input type="email" name="email" id="email" class="form-control" placeholder="Email aktif" required>
 	    </div>
 	    <div class="mb-3">
 	        <label for="nopeg" class="form-label">Nomor Pegawai :</label>
@@ -55,33 +55,33 @@ require 'config/function.php';
 	    </div>
 	    <div class="mb-3">
 	        <label for="mengajar" class="form-label">Mulai Mengajar :</label>
-	        <input type="date" name="mengajar" id="mengajar" class="form-control text-muted" placeholder="Tanggal Mulai Mengajar">
+	        <input type="date" name="mengajar" id="mengajar" class="form-control text-muted" placeholder="Tanggal Mulai Mengajar" required>
 	    </div>
 	    <div class="mb-3">
 	    	<label for="nohp" class="form-label">Nomor Hp:</label>
-			<input type="number" name="nohp" id="nohp" class="form-control" placeholder="ex : 08129XXXXXXX">
+			<input type="number" name="nohp" id="nohp" class="form-control" placeholder="ex : 08129XXXXXXX" required>
 	    </div>
 	    <div class="form-control">	
 	    	<label for="kampus">Lokasi / Ruang:</label><br>
-			Kampus : <input type="text" name="kampus" id="kampus" class="form-control" placeholder="ex : Kampus D">
-			Gedung : <input type="text" name="gedung" class="form-control" placeholder="ex : Gedung 3">
-			Lantai : <input type="text" name="lantai" class="form-control" placeholder="ex : Lantai 2">
+			Kampus : <input type="text" name="kampus" id="kampus" class="form-control" placeholder="ex : Kampus D" required>
+			Gedung : <input type="text" name="gedung" class="form-control" placeholder="ex : Gedung 3" required>
+			Lantai : <input type="text" name="lantai" class="form-control" placeholder="ex : Lantai 2" required>
 	    </div><br>
 	    <div class="form-control">
 	    	<label>Status:</label><br>
-			<input type="radio" name="status" id="sttetap" value="Staff Tetap">
+			<input type="radio" name="status" id="sttetap" value="Staff Tetap" required>
 			<label for="sttetap">Staff Tetap</label>	
-			<input type="radio" name="status" id="sthonorer" value="Staff Honorer">
+			<input type="radio" name="status" id="sthonorer" value="Staff Honorer" required>
 			<label for="sthonorer">Staff Honorer</label>
-			<input type="radio" name="status" id="stluarbiasa" value="Staff Luar Biasa">
+			<input type="radio" name="status" id="stluarbiasa" value="Staff Luar Biasa" required>
 			<label for="stluarbiasa">Staff Luar Biasa</label>
 	    </div><br>
 
 	    <hr><h5><strong>TIPE AKUN</strong></h5>
 	    <div class="form-control">
-	    	<input type="radio" name="tipeacc" id="accbaru" value="Account Baru">
+	    	<input type="radio" name="tipeacc" id="accbaru" value="Account Baru" required>
 			<label for="accbaru">Account Baru</label>
-			<input type="radio" name="tipeacc" id="accsem" value="Account Sementara">
+			<input type="radio" name="tipeacc" id="accsem" value="Account Sementara" required>
 			<label for="accsem" style="margin-bottom: 1%;">Account Sementara</label><br>
 			<label for="hinggatgl" style="margin-bottom: 1%;">Hingga Tanggal : </label>
 	        <input type="date" name="hinggatgl" id="hinggatgl" class="form-control text-muted" placeholder="Hingga Tanggal">

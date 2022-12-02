@@ -126,6 +126,7 @@ $result = mysqli_fetch_array($query);
 if (isset($_POST['submit'])) {
 	if (edit_data($_POST) > 0) {
 		echo "<script>Swal.fire('Data Berhasil Diedit!','','success')</script>";
+		echo "<script>location.href = 'data-staff.php'</script>";
 	} else {
 		echo "<script>Swal.fire('Data Gagal Diedit!','','error')</script>";
 	}

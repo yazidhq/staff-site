@@ -29,13 +29,13 @@ $staff_check = mysqli_query($conn, 'SELECT * FROM staffsite WHERE acc_status = 1
 	                    <p class="card-text">Nomor Pegawai : <?= $row['nopeg'] ?></p>
 			    		<p class="card-text" style="margin-top: -2.5vh">Fakultas : <?= $row['lembaga'] ?></p>
 			    		<div class="d-grid gap-2">
-			    			<a href="../config/switchBool.php?id=<?= $row['id'] ?>" type="button" class="btn btn-outline-primary" onclick="confirm('Apakah anda yakin sudah dibuatkan akun?')">Klik jika sudah dibuat akun</a>
+			    			<a href="../config/switchBool.php?id=<?= $row['id'] ?>" type="button" class="btn btn-outline-primary">Klik jika sudah dibuat akun</a>
 			    		</div>
 					</div>
 					<div class="btn-group" role="group" aria-label="Basic mixed styles example">
 		                <a href="detail-data.php?id=<?= $row['id'] ?>" class="btn btn-success" id="daftar">Detail</a>
 		                <a href="edit.php?id=<?= $row['id'] ?>" class="btn btn-warning">Edit</a>
-				    	<a href="../config/remove.php?id=<?= $row['id'] ?>" class="btn btn-danger" onclick = "return confirm('Yakin Hapus?')">Remove</a>
+				    	<a href="../config/remove.php?id=<?= $row['id'] ?>" class="btn btn-danger delete-confirm">Remove</a>
 			    	</div>
 				</div>
 			</div>
@@ -54,13 +54,13 @@ $staff_check = mysqli_query($conn, 'SELECT * FROM staffsite WHERE acc_status = 1
 	                    <p class="card-text">Nomor Pegawai : <?= $row['nopeg'] ?></p>
 			    		<p class="card-text" style="margin-top: -2.5vh">Fakultas : <?= $row['lembaga'] ?></p>
 			    		<div class="d-grid gap-2">
-			    			<a href="../config/switchBool_2.php?id=<?= $row['id'] ?>" type="button" class="btn btn-outline-primary" onclick="confirm('Apakah anda yakin untuk dihapus dari list yang sudah dibuatkan akun?')">Hapus dari list sudah dibuat</a>
+			    			<a href="../config/switchBool_2.php?id=<?= $row['id'] ?>" type="button" class="btn btn-outline-primary">Hapus dari list sudah dibuat</a>
 			    		</div>
 					</div>
 					<div class="btn-group" role="group" aria-label="Basic mixed styles example">
 		                <a href="detail-data.php?id=<?= $row['id'] ?>" class="btn btn-success" id="daftar">Detail</a>
 		                <a href="edit.php?id=<?= $row['id'] ?>" class="btn btn-warning">Edit</a>
-				    	<a href="../config/remove.php?id=<?= $row['id'] ?>" class="btn btn-danger" onclick = "return confirm('Yakin Hapus?')">Remove</a>
+				    	<a href="../config/remove.php?id=<?= $row['id'] ?>" class="btn btn-danger delete-confirm">Remove</a>
 			    	</div>
 				</div>
 			</div>

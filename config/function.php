@@ -1,3 +1,8 @@
+<head>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+</head>
+
 <?php 
 
 require 'connect.php';
@@ -132,12 +137,28 @@ function upload(){
 	$eksGambar = strtolower(end($eksGambar));
 
 	if (!in_array($eksGambar, $eksGambarValid)) {
-		echo "<script>alert('Yang Anda Masukkan Bukan jpg/jpeg/png')</script>";
+		echo 	'<script type="text/javascript">
+					$(document).ready(function(){
+						Swal.fire(
+						  "Ekstensi KTP",
+						  "Ekstensi KTP yang anda unggah bukan JPG/ JPEG/ PNG",
+						  "error"
+						)
+						});
+				</script>';
 		return false;
 	}
 
 	if ($sizeFile > 2000000) {
-		echo "<script>alert('Maksimum ukuran 2mb')</script>";
+		echo 	'<script type="text/javascript">
+					$(document).ready(function(){
+						Swal.fire(
+						  "Ukuran KTP",
+						  "Ukuran KTP yang anda unggah melebihi ukuran maksimum (2mb)",
+						  "error"
+						)
+						});
+				</script>';
 		return false;
 	}
 
@@ -161,12 +182,28 @@ function uploadfromadmin(){
 	$eksGambar = strtolower(end($eksGambar));
 
 	if (!in_array($eksGambar, $eksGambarValid)) {
-		echo "<script>alert('Yang Anda Masukkan Bukan jpg/jpeg/png')</script>";
+		echo 	'<script type="text/javascript">
+					$(document).ready(function(){
+						Swal.fire(
+						  "Ekstensi KTP",
+						  "Ekstensi KTP yang anda unggah bukan JPG/ JPEG/ PNG",
+						  "error"
+						)
+						});
+				</script>';
 		return false;
 	}
 
 	if ($sizeFile > 2000000) {
-		echo "<script>alert('Maksimum ukuran 2mb')</script>";
+		echo 	'<script type="text/javascript">
+					$(document).ready(function(){
+						Swal.fire(
+						  "Ukuran KTP",
+						  "Ukuran KTP yang anda unggah melebihi ukuran maksimum (2mb)",
+						  "error"
+						)
+						});
+				</script>';
 		return false;
 	}
 

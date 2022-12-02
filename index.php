@@ -22,15 +22,15 @@ require 'config/function.php';
 		<h5><strong>DATA PEMOHON</strong></h5>
 	    <div class="mb-3">
 	        <label for="nama" class="form-label">Nama Lengkap :</label>
-	        <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Lengkap" required>
+	        <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Lengkap" required="" oninvalid="this.setCustomValidity('Lengkapi Nama Lengkap')" oninput="setCustomValidity('')">
 	    </div>
 	    <div class="mb-3">
 	        <label for="ttl" class="form-label">Tempat Tanggal Lahir :</label>
-	        <input type="date" name="ttl" id="ttl" class="form-control text-muted" required>
+	        <input type="date" name="ttl" id="ttl" class="form-control text-muted" required="" oninvalid="this.setCustomValidity('Lengkapi Tempat Tanggal Lahir')" oninput="setCustomValidity('')">
 	    </div>
 	    <div class="mb-3">
 	        <label for="lembaga" class="form-label">Bagian / Lembaga / Fakultas :</label><br>
-		  	<select name="lembaga" id="lembaga" class="form-control text-muted" required>
+		  	<select name="lembaga" id="lembaga" class="form-control text-muted" required="" oninvalid="this.setCustomValidity('Lengkapi Bagian / Lembaga / Fakultas')" oninput="setCustomValidity('')">
 			    <option hidden>Select Option ▼</option>
 			    <option value="FIKTI">FIKTI</option>
 			    <option value="EKONOMI">EKONOMI</option>
@@ -43,29 +43,29 @@ require 'config/function.php';
 	    </div>
 	    <div class="mb-3">
 	        <label for="jabatan" class="form-label">Jabatan :</label>
-	        <input type="text" name="jabatan" id="jabatan" class="form-control" placeholder="Jabatan saat ini" required>
+	        <input type="text" name="jabatan" id="jabatan" class="form-control" placeholder="Jabatan saat ini" required="" oninvalid="this.setCustomValidity('Lengkapi Jabatan')" oninput="setCustomValidity('')">
 	    </div>
 	    <div class="mb-3">
 	        <label for="email" class="form-label">Email :</label>
-	        <input type="email" name="email" id="email" class="form-control" placeholder="Email aktif" required>
+	        <input type="email" name="email" id="email" class="form-control" placeholder="Email aktif" required="" oninvalid="this.setCustomValidity('Lengkapi Email')" oninput="setCustomValidity('')">
 	    </div>
 	    <div class="mb-3">
 	        <label for="nopeg" class="form-label">Nomor Pegawai :</label>
-	        <input type="text" name="nopeg" id="nopeg" class="form-control" placeholder="Nomor Pegawai" required>
+	        <input type="text" name="nopeg" id="nopeg" class="form-control" placeholder="Nomor Pegawai" required="" oninvalid="this.setCustomValidity('Lengkapi Nomor Pegawai')" oninput="setCustomValidity('')">
 	    </div>
 	    <div class="mb-3">
 	        <label for="mengajar" class="form-label">Mulai Mengajar :</label>
-	        <input type="date" name="mengajar" id="mengajar" class="form-control text-muted" placeholder="Tanggal Mulai Mengajar" required>
+	        <input type="date" name="mengajar" id="mengajar" class="form-control text-muted" placeholder="Tanggal Mulai Mengajar" required="" oninvalid="this.setCustomValidity('Lengkapi Mulai Mengajar')" oninput="setCustomValidity('')">
 	    </div>
 	    <div class="mb-3">
 	    	<label for="nohp" class="form-label">Nomor Hp:</label>
-			<input type="number" name="nohp" id="nohp" class="form-control" placeholder="ex : 08129XXXXXXX" required>
+			<input type="number" name="nohp" id="nohp" class="form-control" placeholder="ex : 08129XXXXXXX" required="" oninvalid="this.setCustomValidity('Lengkapi Nomor HP')" oninput="setCustomValidity('')">
 	    </div>
 	    <div class="form-control">	
 	    	<label for="kampus">Lokasi / Ruang:</label><br>
-			Kampus : <input type="text" name="kampus" id="kampus" class="form-control" placeholder="ex : Kampus D" required>
-			Gedung : <input type="text" name="gedung" class="form-control" placeholder="ex : Gedung 3" required>
-			Lantai : <input type="text" name="lantai" class="form-control" placeholder="ex : Lantai 2" required>
+			Kampus : <input type="text" name="kampus" id="kampus" class="form-control" placeholder="ex : Kampus D" required="" oninvalid="this.setCustomValidity('Lengkapi Kampus')" oninput="setCustomValidity('')">
+			Gedung : <input type="text" name="gedung" class="form-control" placeholder="ex : Gedung 3" required="" oninvalid="this.setCustomValidity('Lengkapi Gedung')" oninput="setCustomValidity('')">
+			Lantai : <input type="text" name="lantai" class="form-control" placeholder="ex : Lantai 2" required="" oninvalid="this.setCustomValidity('Lengkapi Lantai')" oninput="setCustomValidity('')">
 	    </div><br>
 	    <div class="form-control">
 	    	<label>Status:</label><br>
@@ -73,7 +73,7 @@ require 'config/function.php';
 			<label for="sttetap">Staff Tetap</label>	
 			<input type="radio" name="status" id="sthonorer" value="Staff Honorer" required>
 			<label for="sthonorer">Staff Honorer</label>
-			<input type="radio" name="status" id="stluarbiasa" value="Staff Luar Biasa" required>
+			<input type="radio" name="status" id="stluarbiasa" value="Staff Luar Biasa" required=>
 			<label for="stluarbiasa">Staff Luar Biasa</label>
 	    </div><br>
 
@@ -90,11 +90,11 @@ require 'config/function.php';
 	    <hr><h5><strong>NAMA AKUN & PASSWORD</strong></h5>
 	    <div class="mb-3">
 	    	<label for="pil1" class="form-label">Pilihan 1 :</label>
-	        <input type="text" name="pil1" id="pil1" class="form-control" placeholder="Username pilihan pertama">
+	        <input type="text" name="pil1" id="pil1" class="form-control" placeholder="Username pilihan pertama" required="" oninvalid="this.setCustomValidity('Lengkapi Username Pilihan Pertama')" oninput="setCustomValidity('')">
 		</div>
 		<div class="mb-3">
 	    	<label for="pil2" class="form-label">Pilihan 2 :</label>
-	        <input type="text" name="pil2" id="pil2" class="form-control" placeholder="Username pilihan kedua">
+	        <input type="text" name="pil2" id="pil2" class="form-control" placeholder="Username pilihan kedua" required="" oninvalid="this.setCustomValidity('Lengkapi Username Pilihan Kedua')" oninput="setCustomValidity('')">
 		</div>
 		<div class="mb-3" hidden>
 	    	<label for="altern" class="form-label">Alternatif (diisi oleh admin) :</label>
@@ -102,13 +102,13 @@ require 'config/function.php';
 		</div>
 		<div class="mb-3">
 	    	<label for="pass" class="form-label">Password Awal :</label>
-	        <input type="text" name="pass" id="pass" class="form-control" placeholder="Password awal">
+	        <input type="text" name="pass" id="pass" class="form-control" placeholder="Password awal" required="" oninvalid="this.setCustomValidity('Lengkapi Password Awal')" oninput="setCustomValidity('')">
 		</div>
 		
 		<hr><h5><strong>KARTU IDENTITAS</strong></h5>
 		<div class="mb-3">
 		  <label for="ktp" class="form-label">Upload KTP</label>
-		  <input type="file" name="ktp" id="ktp" class="form-control" required>
+		  <input type="file" name="ktp" id="ktp" class="form-control" required="" oninvalid="this.setCustomValidity('Lengkapi KTP')" oninput="setCustomValidity('')">
 		  <div class="form-text">Ekstensi jpg/jpeg/png. MaxSize 2mb.</div>
 		</div><hr>
 
@@ -124,7 +124,7 @@ require 'config/function.php';
 
 		<h5>PERSETUJUAN</h5>
 		<div class="form-control">
-			<input type="checkbox" required> Dengan ini saya menyatakan bahwa data di atas adalah benar, dan saya mengerti serta setuju akan diberikan hak untuk pemanfaatan fasilitas akses account e-mail Universitas Gunadarma, dan bersedia untuk memenuhi peraturan dan ketentuan yang telah ditetapkan.</input>
+			<input type="checkbox" required="" oninvalid="this.setCustomValidity('Centang Untuk Menyetujui')" oninput="setCustomValidity('')"> Dengan ini saya menyatakan bahwa data di atas adalah benar, dan saya mengerti serta setuju akan diberikan hak untuk pemanfaatan fasilitas akses account e-mail Universitas Gunadarma, dan bersedia untuk memenuhi peraturan dan ketentuan yang telah ditetapkan.</input>
 		</div><br>
 		<div class="d-grid gap-2">
 	    	<button type="submit" class="btn btn-success" name="submit" style="margin-bottom: 1%">Submit</button>
